@@ -30,9 +30,11 @@ export default class SubstorePage {
 
   // Getter methods to access private properties
   public getPharmacy() {
+    return this.page.locator("");
   }
 
   public getInventory() {
+    return this.page.locator("");
   }
 
   public getAccounts() {
@@ -188,5 +190,6 @@ export default class SubstorePage {
    * - Screenshot of the page is captured and saved successfully in the specified folder.
    */
   async captureScreenshotOfInventoryRequisitionSection() {
+    return Buffer.alloc(0);
   }
 }
