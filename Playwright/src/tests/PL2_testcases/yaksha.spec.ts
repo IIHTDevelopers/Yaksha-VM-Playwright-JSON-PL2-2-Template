@@ -277,7 +277,7 @@ async function assertWarningPopupMessage(utilitiesPage: UtilitiesPage) {
   await expect(utilitiesPage.utilities.warningPopup).toBeVisible();
 }
 
-async function verifyCaptureScreenshot(page: Page, screenshot: Buffer) {
+async function verifyCaptureScreenshot(page: Page, screenshot?: Buffer) {
   const fileName = "inventory-requisition-section-chromium-win32.png";
   await expect(screenshot).toMatchSnapshot(
     "../../inventory-requisition-section-chromium-win32.png",
